@@ -50,10 +50,9 @@ architecture Behavioral of calcul_param_1 is
 ---------------------------------------------------------------------------------
 -- Signaux
 ----------------------------------------------------------------------------------
-    type State_Type is (E0, E1, E2);
+    type State_Type is (E0, E1, E2, Sortie);
     signal current_state, next_state : State_Type;
     signal periode : std_logic_vector(7 downto 0);
-    signal temp_periode : std_logic_vector(7 downto 0);
     
     signal streak : std_logic_vector(1 downto 0);
     
@@ -74,7 +73,6 @@ architecture Behavioral of calcul_param_1 is
 --    Description comportementale
 ---------------------------------------------------------------------------------------------
 begin 
-    o_param <= temp_periode;
     compteur_3 : compteur_nbits generic map (nbits => 2)
                         port map (
                             clk => i_bclk,
@@ -118,9 +116,9 @@ begin
             end if;
         when E2 =>
             if (streak = "11") then
-                next_state <= E1;
-                temp_periode <= periode;
-                rst_compteur_periode <= '1';
+                next_state <= Sortie;
+               -- temp_periode <= periode
+                --rst_compteur_periode <= '1';
             else
                 next_state <= E2;
             end if;
