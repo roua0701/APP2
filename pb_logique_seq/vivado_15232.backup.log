@@ -1,0 +1,107 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Fri Jan 26 12:50:50 2024
+# Process ID: 15232
+# Current directory: C:/Users/arous/Bureau/APP2/pb_logique_seq
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent22540 C:\Users\arous\Bureau\APP2\pb_logique_seq\pb_logique_seq.xpr
+# Log file: C:/Users/arous/Bureau/APP2/pb_logique_seq/vivado.log
+# Journal file: C:/Users/arous/Bureau/APP2/pb_logique_seq\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/arous/Bureau/APP2/pb_logique_seq/pb_logique_seq.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'.
+WARNING: [IP_Flow 19-3664] IP 'design_1_compteur_nbits_0_0' generated file not found 'c:/Users/arous/Bureau/APP2/pb_logique_seq/pb_logique_seq.gen/sources_1/bd/design_1/ip/design_1_compteur_nbits_0_0/design_1_compteur_nbits_0_0.dcp'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_compteur_nbits_0_0' generated file not found 'c:/Users/arous/Bureau/APP2/pb_logique_seq/pb_logique_seq.gen/sources_1/bd/design_1/ip/design_1_compteur_nbits_0_0/design_1_compteur_nbits_0_0_stub.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_compteur_nbits_0_0' generated file not found 'c:/Users/arous/Bureau/APP2/pb_logique_seq/pb_logique_seq.gen/sources_1/bd/design_1/ip/design_1_compteur_nbits_0_0/design_1_compteur_nbits_0_0_stub.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_compteur_nbits_0_0' generated file not found 'c:/Users/arous/Bureau/APP2/pb_logique_seq/pb_logique_seq.gen/sources_1/bd/design_1/ip/design_1_compteur_nbits_0_0/design_1_compteur_nbits_0_0_sim_netlist.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_compteur_nbits_0_0' generated file not found 'c:/Users/arous/Bureau/APP2/pb_logique_seq/pb_logique_seq.gen/sources_1/bd/design_1/ip/design_1_compteur_nbits_0_0/design_1_compteur_nbits_0_0_sim_netlist.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_reg_24b_0_0' generated file not found 'c:/Users/arous/Bureau/APP2/pb_logique_seq/pb_logique_seq.gen/sources_1/bd/design_1/ip/design_1_reg_24b_0_0/design_1_reg_24b_0_0.dcp'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_reg_24b_0_0' generated file not found 'c:/Users/arous/Bureau/APP2/pb_logique_seq/pb_logique_seq.gen/sources_1/bd/design_1/ip/design_1_reg_24b_0_0/design_1_reg_24b_0_0_stub.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_reg_24b_0_0' generated file not found 'c:/Users/arous/Bureau/APP2/pb_logique_seq/pb_logique_seq.gen/sources_1/bd/design_1/ip/design_1_reg_24b_0_0/design_1_reg_24b_0_0_stub.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_reg_24b_0_0' generated file not found 'c:/Users/arous/Bureau/APP2/pb_logique_seq/pb_logique_seq.gen/sources_1/bd/design_1/ip/design_1_reg_24b_0_0/design_1_reg_24b_0_0_sim_netlist.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_reg_24b_0_0' generated file not found 'c:/Users/arous/Bureau/APP2/pb_logique_seq/pb_logique_seq.gen/sources_1/bd/design_1/ip/design_1_reg_24b_0_0/design_1_reg_24b_0_0_sim_netlist.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_reg_24b_0_1' generated file not found 'c:/Users/arous/Bureau/APP2/pb_logique_seq/pb_logique_seq.gen/sources_1/bd/design_1/ip/design_1_reg_24b_0_1/design_1_reg_24b_0_1.dcp'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_reg_24b_0_1' generated file not found 'c:/Users/arous/Bureau/APP2/pb_logique_seq/pb_logique_seq.gen/sources_1/bd/design_1/ip/design_1_reg_24b_0_1/design_1_reg_24b_0_1_stub.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_reg_24b_0_1' generated file not found 'c:/Users/arous/Bureau/APP2/pb_logique_seq/pb_logique_seq.gen/sources_1/bd/design_1/ip/design_1_reg_24b_0_1/design_1_reg_24b_0_1_stub.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_reg_24b_0_1' generated file not found 'c:/Users/arous/Bureau/APP2/pb_logique_seq/pb_logique_seq.gen/sources_1/bd/design_1/ip/design_1_reg_24b_0_1/design_1_reg_24b_0_1_sim_netlist.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_reg_24b_0_1' generated file not found 'c:/Users/arous/Bureau/APP2/pb_logique_seq/pb_logique_seq.gen/sources_1/bd/design_1/ip/design_1_reg_24b_0_1/design_1_reg_24b_0_1_sim_netlist.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_mef_cod_i2s_vsb_0_0' generated file not found 'c:/Users/arous/Bureau/APP2/pb_logique_seq/pb_logique_seq.gen/sources_1/bd/design_1/ip/design_1_mef_cod_i2s_vsb_0_0/design_1_mef_cod_i2s_vsb_0_0.dcp'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_mef_cod_i2s_vsb_0_0' generated file not found 'c:/Users/arous/Bureau/APP2/pb_logique_seq/pb_logique_seq.gen/sources_1/bd/design_1/ip/design_1_mef_cod_i2s_vsb_0_0/design_1_mef_cod_i2s_vsb_0_0_stub.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_mef_cod_i2s_vsb_0_0' generated file not found 'c:/Users/arous/Bureau/APP2/pb_logique_seq/pb_logique_seq.gen/sources_1/bd/design_1/ip/design_1_mef_cod_i2s_vsb_0_0/design_1_mef_cod_i2s_vsb_0_0_stub.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_mef_cod_i2s_vsb_0_0' generated file not found 'c:/Users/arous/Bureau/APP2/pb_logique_seq/pb_logique_seq.gen/sources_1/bd/design_1/ip/design_1_mef_cod_i2s_vsb_0_0/design_1_mef_cod_i2s_vsb_0_0_sim_netlist.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_mef_cod_i2s_vsb_0_0' generated file not found 'c:/Users/arous/Bureau/APP2/pb_logique_seq/pb_logique_seq.gen/sources_1/bd/design_1/ip/design_1_mef_cod_i2s_vsb_0_0/design_1_mef_cod_i2s_vsb_0_0_sim_netlist.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_reg_dec_24b_fd_0_0' generated file not found 'c:/Users/arous/Bureau/APP2/pb_logique_seq/pb_logique_seq.gen/sources_1/bd/design_1/ip/design_1_reg_dec_24b_fd_0_0/design_1_reg_dec_24b_fd_0_0.dcp'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_reg_dec_24b_fd_0_0' generated file not found 'c:/Users/arous/Bureau/APP2/pb_logique_seq/pb_logique_seq.gen/sources_1/bd/design_1/ip/design_1_reg_dec_24b_fd_0_0/design_1_reg_dec_24b_fd_0_0_stub.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_reg_dec_24b_fd_0_0' generated file not found 'c:/Users/arous/Bureau/APP2/pb_logique_seq/pb_logique_seq.gen/sources_1/bd/design_1/ip/design_1_reg_dec_24b_fd_0_0/design_1_reg_dec_24b_fd_0_0_stub.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_reg_dec_24b_fd_0_0' generated file not found 'c:/Users/arous/Bureau/APP2/pb_logique_seq/pb_logique_seq.gen/sources_1/bd/design_1/ip/design_1_reg_dec_24b_fd_0_0/design_1_reg_dec_24b_fd_0_0_sim_netlist.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_reg_dec_24b_fd_0_0' generated file not found 'c:/Users/arous/Bureau/APP2/pb_logique_seq/pb_logique_seq.gen/sources_1/bd/design_1/ip/design_1_reg_dec_24b_fd_0_0/design_1_reg_dec_24b_fd_0_0_sim_netlist.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_util_vector_logic_0_0' generated file not found 'c:/Users/arous/Bureau/APP2/pb_logique_seq/pb_logique_seq.gen/sources_1/bd/design_1/ip/design_1_util_vector_logic_0_0/design_1_util_vector_logic_0_0.dcp'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_util_vector_logic_0_0' generated file not found 'c:/Users/arous/Bureau/APP2/pb_logique_seq/pb_logique_seq.gen/sources_1/bd/design_1/ip/design_1_util_vector_logic_0_0/design_1_util_vector_logic_0_0_stub.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_util_vector_logic_0_0' generated file not found 'c:/Users/arous/Bureau/APP2/pb_logique_seq/pb_logique_seq.gen/sources_1/bd/design_1/ip/design_1_util_vector_logic_0_0/design_1_util_vector_logic_0_0_stub.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_util_vector_logic_0_0' generated file not found 'c:/Users/arous/Bureau/APP2/pb_logique_seq/pb_logique_seq.gen/sources_1/bd/design_1/ip/design_1_util_vector_logic_0_0/design_1_util_vector_logic_0_0_sim_netlist.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_util_vector_logic_0_0' generated file not found 'c:/Users/arous/Bureau/APP2/pb_logique_seq/pb_logique_seq.gen/sources_1/bd/design_1/ip/design_1_util_vector_logic_0_0/design_1_util_vector_logic_0_0_sim_netlist.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_affhexPmodSSD_v3_0_0' generated file not found 'c:/Users/arous/Bureau/APP2/pb_logique_seq/pb_logique_seq.gen/sources_1/bd/design_1/ip/design_1_affhexPmodSSD_v3_0_0/design_1_affhexPmodSSD_v3_0_0.dcp'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_affhexPmodSSD_v3_0_0' generated file not found 'c:/Users/arous/Bureau/APP2/pb_logique_seq/pb_logique_seq.gen/sources_1/bd/design_1/ip/design_1_affhexPmodSSD_v3_0_0/design_1_affhexPmodSSD_v3_0_0_stub.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_affhexPmodSSD_v3_0_0' generated file not found 'c:/Users/arous/Bureau/APP2/pb_logique_seq/pb_logique_seq.gen/sources_1/bd/design_1/ip/design_1_affhexPmodSSD_v3_0_0/design_1_affhexPmodSSD_v3_0_0_stub.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_affhexPmodSSD_v3_0_0' generated file not found 'c:/Users/arous/Bureau/APP2/pb_logique_seq/pb_logique_seq.gen/sources_1/bd/design_1/ip/design_1_affhexPmodSSD_v3_0_0/design_1_affhexPmodSSD_v3_0_0_sim_netlist.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_affhexPmodSSD_v3_0_0' generated file not found 'c:/Users/arous/Bureau/APP2/pb_logique_seq/pb_logique_seq.gen/sources_1/bd/design_1/ip/design_1_affhexPmodSSD_v3_0_0/design_1_affhexPmodSSD_v3_0_0_sim_netlist.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_calcul_param_3_0_0' generated file not found 'c:/Users/arous/Bureau/APP2/pb_logique_seq/pb_logique_seq.gen/sources_1/bd/design_1/ip/design_1_calcul_param_3_0_0/design_1_calcul_param_3_0_0.dcp'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_calcul_param_3_0_0' generated file not found 'c:/Users/arous/Bureau/APP2/pb_logique_seq/pb_logique_seq.gen/sources_1/bd/design_1/ip/design_1_calcul_param_3_0_0/design_1_calcul_param_3_0_0_stub.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_calcul_param_3_0_0' generated file not found 'c:/Users/arous/Bureau/APP2/pb_logique_seq/pb_logique_seq.gen/sources_1/bd/design_1/ip/design_1_calcul_param_3_0_0/design_1_calcul_param_3_0_0_stub.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_calcul_param_3_0_0' generated file not found 'c:/Users/arous/Bureau/APP2/pb_logique_seq/pb_logique_seq.gen/sources_1/bd/design_1/ip/design_1_calcul_param_3_0_0/design_1_calcul_param_3_0_0_sim_netlist.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_calcul_param_3_0_0' generated file not found 'c:/Users/arous/Bureau/APP2/pb_logique_seq/pb_logique_seq.gen/sources_1/bd/design_1/ip/design_1_calcul_param_3_0_0/design_1_calcul_param_3_0_0_sim_netlist.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_mux4_0_0' generated file not found 'c:/Users/arous/Bureau/APP2/pb_logique_seq/pb_logique_seq.gen/sources_1/bd/design_1/ip/design_1_mux4_0_0/design_1_mux4_0_0.dcp'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_mux4_0_0' generated file not found 'c:/Users/arous/Bureau/APP2/pb_logique_seq/pb_logique_seq.gen/sources_1/bd/design_1/ip/design_1_mux4_0_0/design_1_mux4_0_0_stub.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_mux4_0_0' generated file not found 'c:/Users/arous/Bureau/APP2/pb_logique_seq/pb_logique_seq.gen/sources_1/bd/design_1/ip/design_1_mux4_0_0/design_1_mux4_0_0_stub.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_mux4_0_0' generated file not found 'c:/Users/arous/Bureau/APP2/pb_logique_seq/pb_logique_seq.gen/sources_1/bd/design_1/ip/design_1_mux4_0_0/design_1_mux4_0_0_sim_netlist.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_mux4_0_0' generated file not found 'c:/Users/arous/Bureau/APP2/pb_logique_seq/pb_logique_seq.gen/sources_1/bd/design_1/ip/design_1_mux4_0_0/design_1_mux4_0_0_sim_netlist.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_mux4_0_1' generated file not found 'c:/Users/arous/Bureau/APP2/pb_logique_seq/pb_logique_seq.gen/sources_1/bd/design_1/ip/design_1_mux4_0_1/design_1_mux4_0_1.dcp'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_mux4_0_1' generated file not found 'c:/Users/arous/Bureau/APP2/pb_logique_seq/pb_logique_seq.gen/sources_1/bd/design_1/ip/design_1_mux4_0_1/design_1_mux4_0_1_stub.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_mux4_0_1' generated file not found 'c:/Users/arous/Bureau/APP2/pb_logique_seq/pb_logique_seq.gen/sources_1/bd/design_1/ip/design_1_mux4_0_1/design_1_mux4_0_1_stub.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_mux4_0_1' generated file not found 'c:/Users/arous/Bureau/APP2/pb_logique_seq/pb_logique_seq.gen/sources_1/bd/design_1/ip/design_1_mux4_0_1/design_1_mux4_0_1_sim_netlist.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_mux4_0_1' generated file not found 'c:/Users/arous/Bureau/APP2/pb_logique_seq/pb_logique_seq.gen/sources_1/bd/design_1/ip/design_1_mux4_0_1/design_1_mux4_0_1_sim_netlist.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_sig_fct_sat_dure_0_1' generated file not found 'c:/Users/arous/Bureau/APP2/pb_logique_seq/pb_logique_seq.gen/sources_1/bd/design_1/ip/design_1_sig_fct_sat_dure_0_1/design_1_sig_fct_sat_dure_0_1.dcp'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_sig_fct_sat_dure_0_1' generated file not found 'c:/Users/arous/Bureau/APP2/pb_logique_seq/pb_logique_seq.gen/sources_1/bd/design_1/ip/design_1_sig_fct_sat_dure_0_1/design_1_sig_fct_sat_dure_0_1_stub.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_sig_fct_sat_dure_0_1' generated file not found 'c:/Users/arous/Bureau/APP2/pb_logique_seq/pb_logique_seq.gen/sources_1/bd/design_1/ip/design_1_sig_fct_sat_dure_0_1/design_1_sig_fct_sat_dure_0_1_stub.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_sig_fct_sat_dure_0_1' generated file not found 'c:/Users/arous/Bureau/APP2/pb_logique_seq/pb_logique_seq.gen/sources_1/bd/design_1/ip/design_1_sig_fct_sat_dure_0_1/design_1_sig_fct_sat_dure_0_1_sim_netlist.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_sig_fct_sat_dure_0_1' generated file not found 'c:/Users/arous/Bureau/APP2/pb_logique_seq/pb_logique_seq.gen/sources_1/bd/design_1/ip/design_1_sig_fct_sat_dure_0_1/design_1_sig_fct_sat_dure_0_1_sim_netlist.vhdl'. Please regenerate to continue.
+open_project: Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 1112.652 ; gain = 0.000
+open_bd_design {C:/Users/arous/Bureau/APP2/pb_logique_seq/pb_logique_seq.srcs/sources_1/bd/design_1/design_1.bd}
+Reading block design file <C:/Users/arous/Bureau/APP2/pb_logique_seq/pb_logique_seq.srcs/sources_1/bd/design_1/design_1.bd>...
+Adding component instance block -- xilinx.com:module_ref:compteur_nbits:1.0 - compteur_7bits
+Adding component instance block -- xilinx.com:module_ref:reg_24b:1.0 - registre_24bits_droite
+Adding component instance block -- xilinx.com:module_ref:reg_24b:1.0 - registre_24bits_gauche
+Adding component instance block -- xilinx.com:module_ref:reg_dec_24b:1.0 - registre_decalage_24bits
+Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - xlconstant_0
+Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - xlconstant_1
+Adding component instance block -- xilinx.com:module_ref:mef_decod_i2s_v1b:1.0 - MEF_decodeur_i2s
+Adding component instance block -- xilinx.com:module_ref:compteur_nbits:1.0 - compteur_nbits_0
+Adding component instance block -- xilinx.com:module_ref:mef_cod_i2s_vsb:1.0 - mef_cod_i2s_vsb_0
+Adding component instance block -- xilinx.com:module_ref:mux2:1.0 - mux2_0
+Adding component instance block -- xilinx.com:module_ref:reg_dec_24b_fd:1.0 - reg_dec_24b_fd_0
+Adding component instance block -- xilinx.com:ip:util_vector_logic:2.0 - util_vector_logic_0
+Adding component instance block -- xilinx.com:ip:xlconcat:2.1 - xlconcat_0
+Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - xlconstant_0
+Adding component instance block -- xilinx.com:ip:xlslice:1.0 - xlslice_0
+Adding component instance block -- xilinx.com:module_ref:affhexPmodSSD_v3:1.0 - M10_conversion_affichage
+Adding component instance block -- xilinx.com:module_ref:calcul_param_1:1.0 - M5_parametre_1
+Adding component instance block -- xilinx.com:module_ref:calcul_param_2:1.0 - M6_parametre_2
+Adding component instance block -- xilinx.com:module_ref:calcul_param_3:1.0 - M7_parametre_3
+Adding component instance block -- xilinx.com:module_ref:mux4:1.0 - Multiplexeur_choix_fonction
+Adding component instance block -- xilinx.com:module_ref:mux4:1.0 - Multiplexeur_choix_parametre
+Adding component instance block -- xilinx.com:module_ref:sig_fct_3:1.0 - M4_fonction3
+Adding component instance block -- xilinx.com:module_ref:sig_fct_sat_dure:1.0 - M2_fonction_distortion_dure1
+Adding component instance block -- xilinx.com:module_ref:sig_fct_sat_dure:1.0 - M3_fonction_distorsion_dure2
+Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - parametre_0
+Adding component instance block -- xilinx.com:module_ref:module_commande:1.0 - M8_commande
+Successfully read diagram <design_1> from block design file <C:/Users/arous/Bureau/APP2/pb_logique_seq/pb_logique_seq.srcs/sources_1/bd/design_1/design_1.bd>
+open_bd_design: Time (s): cpu = 00:00:05 ; elapsed = 00:00:26 . Memory (MB): peak = 1112.652 ; gain = 0.000
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Jan 26 15:36:23 2024...

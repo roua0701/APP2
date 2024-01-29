@@ -1,0 +1,46 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_Layers":"/M9_codeur_i2s/i_bclk_0_1:true|/M9_codeur_i2s/mef_cod_i2s_vsb_0_o_cpt_bit_reset:true|/M9_codeur_i2s/i_reset_0_1:true|",
+   "Default View_ScaleFactor":"0.821352",
+   "Default View_TopLeft":"-172,-140",
+   "Display-PortTypeClock":"true",
+   "Display-PortTypeOthers":"true",
+   "Display-PortTypeReset":"true",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:10.0 non-TLS
+#  -string -flagsOSRD
+preplace port i_lrc -pg 1 -lvl 0 -x -30 -y 220 -defaultsOSRD
+preplace port i_reset -pg 1 -lvl 0 -x -30 -y 40 -defaultsOSRD
+preplace port i_bclk -pg 1 -lvl 0 -x -30 -y 10 -defaultsOSRD
+preplace portBus i_dat_left -pg 1 -lvl 0 -x -30 -y 70 -defaultsOSRD
+preplace portBus i_dat_right -pg 1 -lvl 0 -x -30 -y 100 -defaultsOSRD
+preplace portBus o_dat -pg 1 -lvl 7 -x 1740 -y 220 -defaultsOSRD
+preplace inst compteur_nbits_0 -pg 1 -lvl 1 -x 140 -y 300 -defaultsOSRD
+preplace inst mef_cod_i2s_vsb_0 -pg 1 -lvl 2 -x 440 -y 270 -defaultsOSRD
+preplace inst mux2_0 -pg 1 -lvl 4 -x 1000 -y 80 -defaultsOSRD
+preplace inst reg_dec_24b_fd_0 -pg 1 -lvl 5 -x 1340 -y 220 -defaultsOSRD
+preplace inst util_vector_logic_0 -pg 1 -lvl 4 -x 1000 -y 210 -defaultsOSRD
+preplace inst xlconcat_0 -pg 1 -lvl 3 -x 730 -y 270 -defaultsOSRD
+preplace inst xlconstant_0 -pg 1 -lvl 4 -x 1000 -y 400 -defaultsOSRD
+preplace inst xlslice_0 -pg 1 -lvl 6 -x 1610 -y 220 -defaultsOSRD
+preplace netloc compteur_nbits_0_o_val_cpt 1 1 1 NJ 300
+preplace netloc mef_cod_i2s_vsb_0_o_cpt_bit_reset 1 0 3 20 400 NJ 400 580
+preplace netloc mef_cod_i2s_vsb_0_o_bit_enable 1 0 5 10 390 NJ 390 590 340 820J 330 1160
+preplace netloc mux2_0_output 1 4 1 1140 80n
+preplace netloc util_vector_logic_0_Res 1 4 1 N 210
+preplace netloc mef_cod_i2s_vsb_0_o_load_left 1 2 2 610 200 N
+preplace netloc mef_cod_i2s_vsb_0_o_load_right 1 2 2 600 190 830
+preplace netloc xlconcat_0_dout 1 3 1 820 60n
+preplace netloc i_lrc_0_1 1 0 2 NJ 220 260J
+preplace netloc input1_0_1 1 0 4 -10J 80 NJ 80 NJ 80 NJ
+preplace netloc input2_0_1 1 0 4 NJ 100 NJ 100 NJ 100 NJ
+preplace netloc i_reset_0_1 1 0 5 NJ 40 280 0 NJ 0 NJ 0 1170
+preplace netloc i_bclk_0_1 1 0 5 0 380 270 360 NJ 360 830J 340 1150
+preplace netloc xlconstant_0_dout 1 4 1 1170 250n
+preplace netloc reg_dec_24b_fd_0_o_dat 1 5 1 NJ 220
+preplace netloc xlslice_0_Dout 1 6 1 NJ 220
+levelinfo -pg 1 -30 140 440 730 1000 1340 1610 1740
+pagesize -pg 1 -db -bbox -sgen -180 -10 1860 460
+"
+}
+0

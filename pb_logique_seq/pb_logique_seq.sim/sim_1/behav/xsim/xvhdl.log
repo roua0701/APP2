@@ -1,0 +1,74 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/arous/Bureau/APP2/pb_logique_seq/pb_logique_seq.srcs/sources_1/imports/new/reg_24b.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'reg_24b'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/arous/Bureau/APP2/pb_logique_seq/pb_logique_seq.srcs/sources_1/imports/new/reg_dec_24b.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'reg_dec_24b'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/arous/Bureau/APP2/pb_logique_seq/pb_logique_seq.srcs/sources_1/imports/new/mef_decod_i2s_v1b.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'mef_decod_i2s_v1b'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/arous/Bureau/APP2/pb_logique_seq/pb_logique_seq.srcs/sources_1/imports/new/mef_cod_i2s_vsb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'mef_cod_i2s_vsb'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/arous/Bureau/APP2/pb_logique_seq/pb_logique_seq.srcs/sources_1/imports/new/mux2.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'mux2'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/arous/Bureau/APP2/pb_logique_seq/pb_logique_seq.srcs/sources_1/imports/new/reg_dec_24b_fd.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'reg_dec_24b_fd'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/arous/Bureau/APP2/pb_logique_seq/pb_logique_seq.srcs/sources_1/imports/new/affhex_pmodssd_v3.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'affhexPmodSSD_v3'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/arous/Bureau/APP2/pb_logique_seq/pb_logique_seq.srcs/sources_1/imports/new/calcul_param_3.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'calcul_param_3'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/arous/Bureau/APP2/pb_logique_seq/pb_logique_seq.srcs/sources_1/imports/new/mux4.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'mux4'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/arous/Bureau/APP2/pb_logique_seq/pb_logique_seq.srcs/sources_1/imports/new/sig_fct_3.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'sig_fct_3'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/arous/Bureau/APP2/pb_logique_seq/pb_logique_seq.srcs/sources_1/imports/new/sig_fct_sat_dure.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'sig_fct_sat_dure'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/arous/Bureau/APP2/pb_logique_seq/pb_logique_seq.srcs/sources_1/imports/new/module_commande.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'module_commande'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/arous/Bureau/APP2/pb_logique_seq/pb_logique_seq.srcs/sources_1/imports/new/calcul_param_2.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'calcul_param_2'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/arous/Bureau/APP2/pb_logique_seq/pb_logique_seq.srcs/sources_1/imports/new/compteur_nbits.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'compteur_nbits'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/arous/Bureau/APP2/pb_logique_seq/pb_logique_seq.srcs/sources_1/imports/new/calcul_param_1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'calcul_param_1'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/arous/Bureau/APP2/pb_logique_seq/pb_logique_seq.ip_user_files/bd/design_1/ip/design_1_compteur_nbits_0_0/sim/design_1_compteur_nbits_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'design_1_compteur_nbits_0_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/arous/Bureau/APP2/pb_logique_seq/pb_logique_seq.ip_user_files/bd/design_1/ip/design_1_reg_24b_0_0/sim/design_1_reg_24b_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'design_1_reg_24b_0_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/arous/Bureau/APP2/pb_logique_seq/pb_logique_seq.ip_user_files/bd/design_1/ip/design_1_reg_24b_0_1/sim/design_1_reg_24b_0_1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'design_1_reg_24b_0_1'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/arous/Bureau/APP2/pb_logique_seq/pb_logique_seq.ip_user_files/bd/design_1/ip/design_1_reg_dec_24b_0_0/sim/design_1_reg_dec_24b_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'design_1_reg_dec_24b_0_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/arous/Bureau/APP2/pb_logique_seq/pb_logique_seq.ip_user_files/bd/design_1/ip/design_1_mef_decod_i2s_v1b_0_0/sim/design_1_mef_decod_i2s_v1b_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'design_1_mef_decod_i2s_v1b_0_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/arous/Bureau/APP2/pb_logique_seq/pb_logique_seq.ip_user_files/bd/design_1/ip/design_1_compteur_nbits_0_1/sim/design_1_compteur_nbits_0_1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'design_1_compteur_nbits_0_1'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/arous/Bureau/APP2/pb_logique_seq/pb_logique_seq.ip_user_files/bd/design_1/ip/design_1_mef_cod_i2s_vsb_0_0/sim/design_1_mef_cod_i2s_vsb_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'design_1_mef_cod_i2s_vsb_0_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/arous/Bureau/APP2/pb_logique_seq/pb_logique_seq.ip_user_files/bd/design_1/ip/design_1_mux2_0_0/sim/design_1_mux2_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'design_1_mux2_0_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/arous/Bureau/APP2/pb_logique_seq/pb_logique_seq.ip_user_files/bd/design_1/ip/design_1_reg_dec_24b_fd_0_0/sim/design_1_reg_dec_24b_fd_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'design_1_reg_dec_24b_fd_0_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/arous/Bureau/APP2/pb_logique_seq/pb_logique_seq.ip_user_files/bd/design_1/ip/design_1_affhexPmodSSD_v3_0_0/sim/design_1_affhexPmodSSD_v3_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'design_1_affhexPmodSSD_v3_0_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/arous/Bureau/APP2/pb_logique_seq/pb_logique_seq.ip_user_files/bd/design_1/ip/design_1_calcul_param_3_0_0/sim/design_1_calcul_param_3_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'design_1_calcul_param_3_0_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/arous/Bureau/APP2/pb_logique_seq/pb_logique_seq.ip_user_files/bd/design_1/ip/design_1_mux4_0_0/sim/design_1_mux4_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'design_1_mux4_0_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/arous/Bureau/APP2/pb_logique_seq/pb_logique_seq.ip_user_files/bd/design_1/ip/design_1_mux4_0_1/sim/design_1_mux4_0_1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'design_1_mux4_0_1'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/arous/Bureau/APP2/pb_logique_seq/pb_logique_seq.ip_user_files/bd/design_1/ip/design_1_sig_fct_3_0_0/sim/design_1_sig_fct_3_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'design_1_sig_fct_3_0_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/arous/Bureau/APP2/pb_logique_seq/pb_logique_seq.ip_user_files/bd/design_1/ip/design_1_sig_fct_sat_dure_0_0/sim/design_1_sig_fct_sat_dure_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'design_1_sig_fct_sat_dure_0_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/arous/Bureau/APP2/pb_logique_seq/pb_logique_seq.ip_user_files/bd/design_1/ip/design_1_sig_fct_sat_dure_0_1/sim/design_1_sig_fct_sat_dure_0_1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'design_1_sig_fct_sat_dure_0_1'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/arous/Bureau/APP2/pb_logique_seq/pb_logique_seq.ip_user_files/bd/design_1/ip/design_1_module_commande_0_0/sim/design_1_module_commande_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'design_1_module_commande_0_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/arous/Bureau/APP2/pb_logique_seq/pb_logique_seq.ip_user_files/bd/design_1/ip/design_1_calcul_param_2_0_0/sim/design_1_calcul_param_2_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'design_1_calcul_param_2_0_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/arous/Bureau/APP2/pb_logique_seq/pb_logique_seq.ip_user_files/bd/design_1/ip/design_1_calcul_param_1_0_0/sim/design_1_calcul_param_1_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'design_1_calcul_param_1_0_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/arous/Bureau/APP2/pb_logique_seq/pb_logique_seq.ip_user_files/bd/design_1/sim/design_1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'M1_decodeur_i2s_imp_17RYJKZ'
+INFO: [VRFC 10-3107] analyzing entity 'M9_codeur_i2s_imp_1VJCTGL'
+INFO: [VRFC 10-3107] analyzing entity 'design_1'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/arous/Bureau/APP2/pb_logique_seq/pb_logique_seq.srcs/sim_1/imports/new/simul_module_sig_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'simul_module_sig_tb'

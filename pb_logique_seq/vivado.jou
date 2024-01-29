@@ -1,0 +1,16 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Sun Jan 28 11:31:32 2024
+# Process ID: 14192
+# Current directory: C:/Users/arous/Bureau/APP2/pb_logique_seq
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4660 C:\Users\arous\Bureau\APP2\pb_logique_seq\pb_logique_seq.xpr
+# Log file: C:/Users/arous/Bureau/APP2/pb_logique_seq/vivado.log
+# Journal file: C:/Users/arous/Bureau/APP2/pb_logique_seq\vivado.jou
+#-----------------------------------------------------------
+start_guioopen_project C:/Users/arous/Bureau/APP2/pb_logique_seq/pb_logique_seq.xproupdate_compile_order -fileset sources_1
+2/pb_logique_seq/pb_logique_seq.srcs/sources_1/bd/design_1/design_1.bd}
+update_compile_order -fileset sources_1
+update_module_reference design_1_calcul_param_1_0_0
+source C:/Users/arous/Bureau/APP2/pb_logique_seq/schema.tcl

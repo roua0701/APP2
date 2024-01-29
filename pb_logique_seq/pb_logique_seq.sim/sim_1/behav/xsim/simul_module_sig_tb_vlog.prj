@@ -1,0 +1,15 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../pb_logique_seq.ip_user_files/bd/design_1/ip/design_1_xlconstant_0_2/sim/design_1_xlconstant_0_2.v" \
+"../../../../pb_logique_seq.ip_user_files/bd/design_1/ip/design_1_xlconstant_0_3/sim/design_1_xlconstant_0_3.v" \
+"../../../../pb_logique_seq.ip_user_files/bd/design_1/ip/design_1_util_vector_logic_0_0/sim/design_1_util_vector_logic_0_0.v" \
+"../../../../pb_logique_seq.ip_user_files/bd/design_1/ip/design_1_xlconcat_0_0/sim/design_1_xlconcat_0_0.v" \
+"../../../../pb_logique_seq.ip_user_files/bd/design_1/ip/design_1_xlconstant_0_1/sim/design_1_xlconstant_0_1.v" \
+"../../../../pb_logique_seq.ip_user_files/bd/design_1/ip/design_1_xlslice_0_0/sim/design_1_xlslice_0_0.v" \
+"../../../../pb_logique_seq.ip_user_files/bd/design_1/ip/design_1_xlconstant_0_0/sim/design_1_xlconstant_0_0.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

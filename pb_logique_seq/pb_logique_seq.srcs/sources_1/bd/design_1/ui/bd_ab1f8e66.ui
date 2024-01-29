@@ -1,0 +1,38 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.82623",
+   "Default View_TopLeft":"-531,-589",
+   "ExpandedHierarchyInLayout":"",
+   "commentid":"",
+   "guistr":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:10.0 non-TLS
+#  -string -flagsOSRD
+preplace port o_str_dat -pg 1 -lvl 3 -x 700 -y -480 -defaultsOSRD
+preplace port clk -pg 1 -lvl 0 -x -350 -y -520 -defaultsOSRD
+preplace port i_data -pg 1 -lvl 0 -x -350 -y -60 -defaultsOSRD
+preplace port i_lrc -pg 1 -lvl 0 -x -350 -y -480 -defaultsOSRD
+preplace port i_reset -pg 1 -lvl 0 -x -350 -y -500 -defaultsOSRD
+preplace portBus o_dat_left -pg 1 -lvl 3 -x 700 -y -390 -defaultsOSRD
+preplace portBus o_dat_right -pg 1 -lvl 3 -x 700 -y -230 -defaultsOSRD
+preplace inst MEF_decodeur_i2s -pg 1 -lvl 1 -x -140 -y -490 -defaultsOSRD
+preplace inst compteur_7bits -pg 1 -lvl 1 -x -140 -y -280 -defaultsOSRD
+preplace inst registre_decalage_24bits -pg 1 -lvl 1 -x -140 -y -90 -defaultsOSRD
+preplace inst registre_24bits_gauche -pg 1 -lvl 2 -x 420 -y -390 -defaultsOSRD
+preplace inst registre_24bits_droite -pg 1 -lvl 2 -x 420 -y -230 -defaultsOSRD
+preplace netloc reg_dec_24b_0_o_dat 1 1 1 60 -360n
+preplace netloc mef_decod_i2s_v1b_0_o_load_left 1 1 1 60 -510n
+preplace netloc mef_decod_i2s_v1b_0_o_load_right 1 1 1 40 -490n
+preplace netloc mef_decod_i2s_v1b_0_o_str_dat 1 1 2 50J -480 NJ
+preplace netloc reg_24b_1_o_dat 1 2 1 NJ -390
+preplace netloc reg_24b_0_o_dat 1 2 1 NJ -230
+preplace netloc clk_1 1 0 2 -320 -370 70
+preplace netloc mef_decod_i2s_v1b_0_o_cpt_bit_reset 1 0 2 -310 -360 20
+preplace netloc mef_decod_i2s_v1b_0_o_bit_enable 1 0 2 -300 -200 30
+preplace netloc i_data_1 1 0 1 NJ -60
+preplace netloc i_lrc_1 1 0 1 NJ -480
+preplace netloc compteur_nbits_0_o_val_cpt 1 0 2 -300 -380 10
+preplace netloc i_reset_1 1 0 2 -330 -390 80
+levelinfo -pg 1 -350 -140 420 700
+pagesize -pg 1 -db -bbox -sgen -450 -590 860 200
+"
+}
+0

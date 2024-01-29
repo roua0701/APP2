@@ -1,0 +1,1067 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Sun Jan 28 19:29:19 2024" VIVADOVERSION="2020.2">
+
+  <SYSTEMINFO ARCH="zynq" BOARD="digilentinc.com:zybo-z7-10:part0:1.0" DEVICE="7z010" NAME="design_1" PACKAGE="clg400" SPEEDGRADE="-1"/>
+
+  <EXTERNALPORTS>
+    <PORT DIR="I" NAME="i_recdat" SIGIS="undef" SIGNAME="External_Ports_i_recdat">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="M1_decodeur_i2s_registre_decalage_24bits" PORT="i_dat_bit"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="i_lrc" SIGIS="undef" SIGNAME="External_Ports_i_lrc">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="M1_decodeur_i2s_MEF_decodeur_i2s" PORT="i_lrc"/>
+        <CONNECTION INSTANCE="M9_codeur_i2s_mef_cod_i2s_vsb_0" PORT="i_lrc"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="3" NAME="i_btn" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_i_btn">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="M8_commande" PORT="i_btn"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="3" NAME="i_sw" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_i_sw">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="M8_commande" PORT="i_sw"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk_100MHz" SIGIS="clk" SIGNAME="External_Ports_clk_100MHz">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="M1_decodeur_i2s_compteur_7bits" PORT="clk"/>
+        <CONNECTION INSTANCE="M1_decodeur_i2s_registre_24bits_droite" PORT="i_clk"/>
+        <CONNECTION INSTANCE="M1_decodeur_i2s_registre_24bits_gauche" PORT="i_clk"/>
+        <CONNECTION INSTANCE="M1_decodeur_i2s_registre_decalage_24bits" PORT="i_clk"/>
+        <CONNECTION INSTANCE="M1_decodeur_i2s_MEF_decodeur_i2s" PORT="i_bclk"/>
+        <CONNECTION INSTANCE="M9_codeur_i2s_compteur_nbits_0" PORT="clk"/>
+        <CONNECTION INSTANCE="M9_codeur_i2s_mef_cod_i2s_vsb_0" PORT="i_bclk"/>
+        <CONNECTION INSTANCE="M9_codeur_i2s_reg_dec_24b_fd_0" PORT="i_clk"/>
+        <CONNECTION INSTANCE="M10_conversion_affichage" PORT="clk"/>
+        <CONNECTION INSTANCE="M7_parametre_3" PORT="i_bclk"/>
+        <CONNECTION INSTANCE="M8_commande" PORT="clk"/>
+        <CONNECTION INSTANCE="M6_parametre_2" PORT="i_bclk"/>
+        <CONNECTION INSTANCE="M5_parametre_1" PORT="i_bclk"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="0" NAME="o_pbdat" RIGHT="0" SIGIS="undef" SIGNAME="M9_codeur_i2s_xlslice_0_Dout">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="M9_codeur_i2s_xlslice_0" PORT="Dout"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="7" NAME="JPmod" RIGHT="0" SIGIS="undef" SIGNAME="M10_conversion_affichage_JPmod">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="M10_conversion_affichage" PORT="JPmod"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="7" NAME="o_param" RIGHT="0" SIGIS="undef" SIGNAME="Multiplexeur_choix_parametre_output0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="Multiplexeur_choix_parametre" PORT="output0"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="1" NAME="o_sel_par" RIGHT="0" SIGIS="undef" SIGNAME="M8_commande_o_selection_par">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="M8_commande" PORT="o_selection_par"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="1" NAME="o_sel_fct" RIGHT="0" SIGIS="undef" SIGNAME="M8_commande_o_selection_fct">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="M8_commande" PORT="o_selection_fct"/>
+      </CONNECTIONS>
+    </PORT>
+  </EXTERNALPORTS>
+
+  <EXTERNALINTERFACES/>
+
+  <MODULES>
+    <MODULE COREREVISION="1" FULLNAME="/M10_conversion_affichage" HWVERSION="1.0" INSTANCE="M10_conversion_affichage" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="affhexPmodSSD_v3" VLNV="xilinx.com:module_ref:affhexPmodSSD_v3:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="const_CLK_Hz" VALUE="100000000"/>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_affhexPmodSSD_v3_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="External_Ports_clk_100MHz">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk_100MHz"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="reset" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="M8_commande_o_reset">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="M8_commande" PORT="o_reset"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="7" NAME="DA" RIGHT="0" SIGIS="undef" SIGNAME="Multiplexeur_choix_parametre_output0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Multiplexeur_choix_parametre" PORT="output0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="i_btn" RIGHT="0" SIGIS="undef" SIGNAME="M8_commande_o_btn_cd">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="M8_commande" PORT="o_btn_cd"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="7" NAME="JPmod" RIGHT="0" SIGIS="undef" SIGNAME="M10_conversion_affichage_JPmod">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="JPmod"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/M1_decodeur_i2s/MEF_decodeur_i2s" HWVERSION="1.0" INSTANCE="M1_decodeur_i2s_MEF_decodeur_i2s" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="mef_decod_i2s_v1b" VLNV="xilinx.com:module_ref:mef_decod_i2s_v1b:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_mef_decod_i2s_v1b_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="i_bclk" SIGIS="undef" SIGNAME="External_Ports_clk_100MHz">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk_100MHz"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="i_reset" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="M8_commande_o_reset">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="M8_commande" PORT="o_reset"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="i_lrc" SIGIS="undef" SIGNAME="External_Ports_i_lrc">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="i_lrc"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="6" NAME="i_cpt_bits" RIGHT="0" SIGIS="undef" SIGNAME="M1_decodeur_i2s_compteur_7bits_o_val_cpt">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="M1_decodeur_i2s_compteur_7bits" PORT="o_val_cpt"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="o_bit_enable" SIGIS="undef" SIGNAME="M1_decodeur_i2s_MEF_decodeur_i2s_o_bit_enable">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="M1_decodeur_i2s_compteur_7bits" PORT="i_en"/>
+            <CONNECTION INSTANCE="M1_decodeur_i2s_registre_decalage_24bits" PORT="i_en"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="o_load_left" SIGIS="undef" SIGNAME="M1_decodeur_i2s_MEF_decodeur_i2s_o_load_left">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="M1_decodeur_i2s_registre_24bits_gauche" PORT="i_en"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="o_load_right" SIGIS="undef" SIGNAME="M1_decodeur_i2s_MEF_decodeur_i2s_o_load_right">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="M1_decodeur_i2s_registre_24bits_droite" PORT="i_en"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="o_str_dat" SIGIS="undef" SIGNAME="M1_decodeur_i2s_MEF_decodeur_i2s_o_str_dat">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="M7_parametre_3" PORT="i_en"/>
+            <CONNECTION INSTANCE="M6_parametre_2" PORT="i_en"/>
+            <CONNECTION INSTANCE="M5_parametre_1" PORT="i_en"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="o_cpt_bit_reset" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="M1_decodeur_i2s_MEF_decodeur_i2s_o_cpt_bit_reset">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="M1_decodeur_i2s_compteur_7bits" PORT="reset"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/M1_decodeur_i2s/compteur_7bits" HWVERSION="1.0" INSTANCE="M1_decodeur_i2s_compteur_7bits" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="compteur_nbits" VLNV="xilinx.com:module_ref:compteur_nbits:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="nbits" VALUE="7"/>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_compteur_nbits_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="External_Ports_clk_100MHz">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk_100MHz"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="i_en" SIGIS="undef" SIGNAME="M1_decodeur_i2s_MEF_decodeur_i2s_o_bit_enable">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="M1_decodeur_i2s_MEF_decodeur_i2s" PORT="o_bit_enable"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="reset" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="M1_decodeur_i2s_MEF_decodeur_i2s_o_cpt_bit_reset">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="M1_decodeur_i2s_MEF_decodeur_i2s" PORT="o_cpt_bit_reset"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="6" NAME="o_val_cpt" RIGHT="0" SIGIS="undef" SIGNAME="M1_decodeur_i2s_compteur_7bits_o_val_cpt">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="M1_decodeur_i2s_MEF_decodeur_i2s" PORT="i_cpt_bits"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/M1_decodeur_i2s/registre_24bits_droite" HWVERSION="1.0" INSTANCE="M1_decodeur_i2s_registre_24bits_droite" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="reg_24b" VLNV="xilinx.com:module_ref:reg_24b:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_reg_24b_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="i_clk" SIGIS="clk" SIGNAME="External_Ports_clk_100MHz">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk_100MHz"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="i_reset" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="M8_commande_o_reset">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="M8_commande" PORT="o_reset"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="i_en" SIGIS="undef" SIGNAME="M1_decodeur_i2s_MEF_decodeur_i2s_o_load_right">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="M1_decodeur_i2s_MEF_decodeur_i2s" PORT="o_load_right"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="23" NAME="i_dat" RIGHT="0" SIGIS="undef" SIGNAME="M1_decodeur_i2s_registre_decalage_24bits_o_dat">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="M1_decodeur_i2s_registre_decalage_24bits" PORT="o_dat"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="23" NAME="o_dat" RIGHT="0" SIGIS="undef" SIGNAME="M1_decodeur_i2s_registre_24bits_droite_o_dat">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Multiplexeur_choix_fonction" PORT="input0"/>
+            <CONNECTION INSTANCE="M4_fonction3" PORT="i_ech"/>
+            <CONNECTION INSTANCE="M2_fonction_distortion_dure1" PORT="i_ech"/>
+            <CONNECTION INSTANCE="M3_fonction_distorsion_dure2" PORT="i_ech"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/M1_decodeur_i2s/registre_24bits_gauche" HWVERSION="1.0" INSTANCE="M1_decodeur_i2s_registre_24bits_gauche" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="reg_24b" VLNV="xilinx.com:module_ref:reg_24b:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_reg_24b_0_1"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="i_clk" SIGIS="clk" SIGNAME="External_Ports_clk_100MHz">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk_100MHz"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="i_reset" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="M8_commande_o_reset">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="M8_commande" PORT="o_reset"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="i_en" SIGIS="undef" SIGNAME="M1_decodeur_i2s_MEF_decodeur_i2s_o_load_left">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="M1_decodeur_i2s_MEF_decodeur_i2s" PORT="o_load_left"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="23" NAME="i_dat" RIGHT="0" SIGIS="undef" SIGNAME="M1_decodeur_i2s_registre_decalage_24bits_o_dat">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="M1_decodeur_i2s_registre_decalage_24bits" PORT="o_dat"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="23" NAME="o_dat" RIGHT="0" SIGIS="undef" SIGNAME="M1_decodeur_i2s_registre_24bits_gauche_o_dat">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="M9_codeur_i2s_mux2_0" PORT="input1"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/M1_decodeur_i2s/registre_decalage_24bits" HWVERSION="1.0" INSTANCE="M1_decodeur_i2s_registre_decalage_24bits" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="reg_dec_24b" VLNV="xilinx.com:module_ref:reg_dec_24b:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_reg_dec_24b_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="i_clk" SIGIS="clk" SIGNAME="External_Ports_clk_100MHz">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk_100MHz"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="i_reset" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="M8_commande_o_reset">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="M8_commande" PORT="o_reset"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="i_load" SIGIS="undef" SIGNAME="M1_decodeur_i2s_xlconstant_0_dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="M1_decodeur_i2s_xlconstant_0" PORT="dout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="i_en" SIGIS="undef" SIGNAME="M1_decodeur_i2s_MEF_decodeur_i2s_o_bit_enable">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="M1_decodeur_i2s_MEF_decodeur_i2s" PORT="o_bit_enable"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="i_dat_bit" SIGIS="undef" SIGNAME="External_Ports_i_recdat">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="i_recdat"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="23" NAME="i_dat_load" RIGHT="0" SIGIS="undef" SIGNAME="M1_decodeur_i2s_xlconstant_1_dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="M1_decodeur_i2s_xlconstant_1" PORT="dout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="23" NAME="o_dat" RIGHT="0" SIGIS="undef" SIGNAME="M1_decodeur_i2s_registre_decalage_24bits_o_dat">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="M1_decodeur_i2s_registre_24bits_droite" PORT="i_dat"/>
+            <CONNECTION INSTANCE="M1_decodeur_i2s_registre_24bits_gauche" PORT="i_dat"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="7" FULLNAME="/M1_decodeur_i2s/xlconstant_0" HWVERSION="1.1" INSTANCE="M1_decodeur_i2s_xlconstant_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xlconstant" VLNV="xilinx.com:ip:xlconstant:1.1">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="CONST_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="CONST_VAL" VALUE="0x0"/>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_xlconstant_0_2"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="O" LEFT="0" NAME="dout" RIGHT="0" SIGIS="undef" SIGNAME="M1_decodeur_i2s_xlconstant_0_dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="M1_decodeur_i2s_registre_decalage_24bits" PORT="i_load"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="7" FULLNAME="/M1_decodeur_i2s/xlconstant_1" HWVERSION="1.1" INSTANCE="M1_decodeur_i2s_xlconstant_1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xlconstant" VLNV="xilinx.com:ip:xlconstant:1.1">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="CONST_WIDTH" VALUE="24"/>
+        <PARAMETER NAME="CONST_VAL" VALUE="0x000001"/>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_xlconstant_0_3"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="O" LEFT="23" NAME="dout" RIGHT="0" SIGIS="undef" SIGNAME="M1_decodeur_i2s_xlconstant_1_dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="M1_decodeur_i2s_registre_decalage_24bits" PORT="i_dat_load"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/M2_fonction_distortion_dure1" HWVERSION="1.0" INSTANCE="M2_fonction_distortion_dure1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="sig_fct_sat_dure" VLNV="xilinx.com:module_ref:sig_fct_sat_dure:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="c_ech_u24_max" VALUE="0x7FFFFF"/>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_sig_fct_sat_dure_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="23" NAME="i_ech" RIGHT="0" SIGIS="undef" SIGNAME="M1_decodeur_i2s_registre_24bits_droite_o_dat">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="M1_decodeur_i2s_registre_24bits_droite" PORT="o_dat"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="23" NAME="o_ech_fct" RIGHT="0" SIGIS="undef" SIGNAME="M2_fonction_distortion_dure1_o_ech_fct">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Multiplexeur_choix_fonction" PORT="input1"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/M3_fonction_distorsion_dure2" HWVERSION="1.0" INSTANCE="M3_fonction_distorsion_dure2" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="sig_fct_sat_dure" VLNV="xilinx.com:module_ref:sig_fct_sat_dure:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="c_ech_u24_max" VALUE="0x1FFFFF"/>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_sig_fct_sat_dure_0_1"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="23" NAME="i_ech" RIGHT="0" SIGIS="undef" SIGNAME="M1_decodeur_i2s_registre_24bits_droite_o_dat">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="M1_decodeur_i2s_registre_24bits_droite" PORT="o_dat"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="23" NAME="o_ech_fct" RIGHT="0" SIGIS="undef" SIGNAME="M3_fonction_distorsion_dure2_o_ech_fct">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Multiplexeur_choix_fonction" PORT="input2"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/M4_fonction3" HWVERSION="1.0" INSTANCE="M4_fonction3" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="sig_fct_3" VLNV="xilinx.com:module_ref:sig_fct_3:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_sig_fct_3_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="23" NAME="i_ech" RIGHT="0" SIGIS="undef" SIGNAME="M1_decodeur_i2s_registre_24bits_droite_o_dat">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="M1_decodeur_i2s_registre_24bits_droite" PORT="o_dat"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="23" NAME="o_ech_fct" RIGHT="0" SIGIS="undef" SIGNAME="M4_fonction3_o_ech_fct">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Multiplexeur_choix_fonction" PORT="input3"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/M5_parametre_1" HWVERSION="1.0" INSTANCE="M5_parametre_1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="calcul_param_1" VLNV="xilinx.com:module_ref:calcul_param_1:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_calcul_param_1_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="i_bclk" SIGIS="undef" SIGNAME="External_Ports_clk_100MHz">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk_100MHz"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="i_reset" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="M8_commande_o_reset">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="M8_commande" PORT="o_reset"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="i_en" SIGIS="undef" SIGNAME="M1_decodeur_i2s_MEF_decodeur_i2s_o_str_dat">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="M1_decodeur_i2s_MEF_decodeur_i2s" PORT="o_str_dat"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="23" NAME="i_ech" RIGHT="0" SIGIS="undef" SIGNAME="Multiplexeur_choix_fonction_output0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Multiplexeur_choix_fonction" PORT="output0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="7" NAME="o_param" RIGHT="0" SIGIS="undef" SIGNAME="M5_parametre_1_o_param">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Multiplexeur_choix_parametre" PORT="input1"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/M6_parametre_2" HWVERSION="1.0" INSTANCE="M6_parametre_2" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="calcul_param_2" VLNV="xilinx.com:module_ref:calcul_param_2:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_calcul_param_2_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="i_bclk" SIGIS="undef" SIGNAME="External_Ports_clk_100MHz">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk_100MHz"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="i_reset" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="M8_commande_o_reset">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="M8_commande" PORT="o_reset"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="i_en" SIGIS="undef" SIGNAME="M1_decodeur_i2s_MEF_decodeur_i2s_o_str_dat">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="M1_decodeur_i2s_MEF_decodeur_i2s" PORT="o_str_dat"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="23" NAME="i_ech" RIGHT="0" SIGIS="undef" SIGNAME="Multiplexeur_choix_fonction_output0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Multiplexeur_choix_fonction" PORT="output0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="7" NAME="o_param" RIGHT="0" SIGIS="undef" SIGNAME="M6_parametre_2_o_param">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Multiplexeur_choix_parametre" PORT="input2"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/M7_parametre_3" HWVERSION="1.0" INSTANCE="M7_parametre_3" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="calcul_param_3" VLNV="xilinx.com:module_ref:calcul_param_3:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_calcul_param_3_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="i_bclk" SIGIS="undef" SIGNAME="External_Ports_clk_100MHz">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk_100MHz"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="i_reset" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="M8_commande_o_reset">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="M8_commande" PORT="o_reset"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="i_en" SIGIS="undef" SIGNAME="M1_decodeur_i2s_MEF_decodeur_i2s_o_str_dat">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="M1_decodeur_i2s_MEF_decodeur_i2s" PORT="o_str_dat"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="23" NAME="i_ech" RIGHT="0" SIGIS="undef" SIGNAME="Multiplexeur_choix_fonction_output0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Multiplexeur_choix_fonction" PORT="output0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="7" NAME="o_param" RIGHT="0" SIGIS="undef" SIGNAME="M7_parametre_3_o_param">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Multiplexeur_choix_parametre" PORT="input3"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/M8_commande" HWVERSION="1.0" INSTANCE="M8_commande" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="module_commande" VLNV="xilinx.com:module_ref:module_commande:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="nbtn" VALUE="4"/>
+        <PARAMETER NAME="mode_simulation" VALUE="&quot;0&quot;"/>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_module_commande_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="External_Ports_clk_100MHz">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk_100MHz"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="o_reset" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="M8_commande_o_reset">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="M1_decodeur_i2s_registre_24bits_droite" PORT="i_reset"/>
+            <CONNECTION INSTANCE="M1_decodeur_i2s_registre_24bits_gauche" PORT="i_reset"/>
+            <CONNECTION INSTANCE="M1_decodeur_i2s_registre_decalage_24bits" PORT="i_reset"/>
+            <CONNECTION INSTANCE="M1_decodeur_i2s_MEF_decodeur_i2s" PORT="i_reset"/>
+            <CONNECTION INSTANCE="M9_codeur_i2s_mef_cod_i2s_vsb_0" PORT="i_reset"/>
+            <CONNECTION INSTANCE="M9_codeur_i2s_reg_dec_24b_fd_0" PORT="i_reset"/>
+            <CONNECTION INSTANCE="M10_conversion_affichage" PORT="reset"/>
+            <CONNECTION INSTANCE="M7_parametre_3" PORT="i_reset"/>
+            <CONNECTION INSTANCE="M6_parametre_2" PORT="i_reset"/>
+            <CONNECTION INSTANCE="M5_parametre_1" PORT="i_reset"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="i_btn" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_i_btn">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="i_btn"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="i_sw" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_i_sw">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="i_sw"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="o_btn_cd" RIGHT="0" SIGIS="undef" SIGNAME="M8_commande_o_btn_cd">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="M10_conversion_affichage" PORT="i_btn"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="1" NAME="o_selection_fct" RIGHT="0" SIGIS="undef" SIGNAME="M8_commande_o_selection_fct">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="o_sel_fct"/>
+            <CONNECTION INSTANCE="Multiplexeur_choix_fonction" PORT="sel"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="1" NAME="o_selection_par" RIGHT="0" SIGIS="undef" SIGNAME="M8_commande_o_selection_par">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="o_sel_par"/>
+            <CONNECTION INSTANCE="Multiplexeur_choix_parametre" PORT="sel"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/M9_codeur_i2s/compteur_nbits_0" HWVERSION="1.0" INSTANCE="M9_codeur_i2s_compteur_nbits_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="compteur_nbits" VLNV="xilinx.com:module_ref:compteur_nbits:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="nbits" VALUE="7"/>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_compteur_nbits_0_1"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="External_Ports_clk_100MHz">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk_100MHz"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="i_en" SIGIS="undef" SIGNAME="M9_codeur_i2s_mef_cod_i2s_vsb_0_o_bit_enable">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="M9_codeur_i2s_mef_cod_i2s_vsb_0" PORT="o_bit_enable"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="reset" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="M9_codeur_i2s_mef_cod_i2s_vsb_0_o_cpt_bit_reset">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="M9_codeur_i2s_mef_cod_i2s_vsb_0" PORT="o_cpt_bit_reset"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="6" NAME="o_val_cpt" RIGHT="0" SIGIS="undef" SIGNAME="M9_codeur_i2s_compteur_nbits_0_o_val_cpt">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="M9_codeur_i2s_mef_cod_i2s_vsb_0" PORT="i_cpt_bits"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/M9_codeur_i2s/mef_cod_i2s_vsb_0" HWVERSION="1.0" INSTANCE="M9_codeur_i2s_mef_cod_i2s_vsb_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="mef_cod_i2s_vsb" VLNV="xilinx.com:module_ref:mef_cod_i2s_vsb:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_mef_cod_i2s_vsb_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="i_bclk" SIGIS="undef" SIGNAME="External_Ports_clk_100MHz">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk_100MHz"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="i_reset" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="M8_commande_o_reset">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="M8_commande" PORT="o_reset"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="i_lrc" SIGIS="undef" SIGNAME="External_Ports_i_lrc">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="i_lrc"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="6" NAME="i_cpt_bits" RIGHT="0" SIGIS="undef" SIGNAME="M9_codeur_i2s_compteur_nbits_0_o_val_cpt">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="M9_codeur_i2s_compteur_nbits_0" PORT="o_val_cpt"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="o_bit_enable" SIGIS="undef" SIGNAME="M9_codeur_i2s_mef_cod_i2s_vsb_0_o_bit_enable">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="M9_codeur_i2s_compteur_nbits_0" PORT="i_en"/>
+            <CONNECTION INSTANCE="M9_codeur_i2s_reg_dec_24b_fd_0" PORT="i_en"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="o_load_left" SIGIS="undef" SIGNAME="M9_codeur_i2s_mef_cod_i2s_vsb_0_o_load_left">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="M9_codeur_i2s_util_vector_logic_0" PORT="Op1"/>
+            <CONNECTION INSTANCE="M9_codeur_i2s_xlconcat_0" PORT="In0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="o_load_right" SIGIS="undef" SIGNAME="M9_codeur_i2s_mef_cod_i2s_vsb_0_o_load_right">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="M9_codeur_i2s_util_vector_logic_0" PORT="Op2"/>
+            <CONNECTION INSTANCE="M9_codeur_i2s_xlconcat_0" PORT="In1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="o_cpt_bit_reset" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="M9_codeur_i2s_mef_cod_i2s_vsb_0_o_cpt_bit_reset">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="M9_codeur_i2s_compteur_nbits_0" PORT="reset"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/M9_codeur_i2s/mux2_0" HWVERSION="1.0" INSTANCE="M9_codeur_i2s_mux2_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="mux2" VLNV="xilinx.com:module_ref:mux2:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="input_length" VALUE="24"/>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_mux2_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="1" NAME="sel" RIGHT="0" SIGIS="undef" SIGNAME="M9_codeur_i2s_xlconcat_0_dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="M9_codeur_i2s_xlconcat_0" PORT="dout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="23" NAME="input1" RIGHT="0" SIGIS="undef" SIGNAME="M1_decodeur_i2s_registre_24bits_gauche_o_dat">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="M1_decodeur_i2s_registre_24bits_gauche" PORT="o_dat"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="23" NAME="input2" RIGHT="0" SIGIS="undef" SIGNAME="Multiplexeur_choix_fonction_output0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Multiplexeur_choix_fonction" PORT="output0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="23" NAME="output0" RIGHT="0" SIGIS="undef" SIGNAME="M9_codeur_i2s_mux2_0_output0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="M9_codeur_i2s_reg_dec_24b_fd_0" PORT="i_dat_load"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/M9_codeur_i2s/reg_dec_24b_fd_0" HWVERSION="1.0" INSTANCE="M9_codeur_i2s_reg_dec_24b_fd_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="reg_dec_24b_fd" VLNV="xilinx.com:module_ref:reg_dec_24b_fd:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_reg_dec_24b_fd_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="i_clk" SIGIS="clk" SIGNAME="External_Ports_clk_100MHz">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk_100MHz"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="i_reset" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="M8_commande_o_reset">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="M8_commande" PORT="o_reset"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="i_load" SIGIS="undef" SIGNAME="M9_codeur_i2s_util_vector_logic_0_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="M9_codeur_i2s_util_vector_logic_0" PORT="Res"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="i_en" SIGIS="undef" SIGNAME="M9_codeur_i2s_mef_cod_i2s_vsb_0_o_bit_enable">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="M9_codeur_i2s_mef_cod_i2s_vsb_0" PORT="o_bit_enable"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="i_dat_bit" SIGIS="undef" SIGNAME="M9_codeur_i2s_xlconstant_0_dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="M9_codeur_i2s_xlconstant_0" PORT="dout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="23" NAME="i_dat_load" RIGHT="0" SIGIS="undef" SIGNAME="M9_codeur_i2s_mux2_0_output0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="M9_codeur_i2s_mux2_0" PORT="output0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="23" NAME="o_dat" RIGHT="0" SIGIS="undef" SIGNAME="M9_codeur_i2s_reg_dec_24b_fd_0_o_dat">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="M9_codeur_i2s_xlslice_0" PORT="Din"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/M9_codeur_i2s/util_vector_logic_0" HWVERSION="2.0" INSTANCE="M9_codeur_i2s_util_vector_logic_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="util_vector_logic" VLNV="xilinx.com:ip:util_vector_logic:2.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="C_OPERATION" VALUE="or"/>
+        <PARAMETER NAME="C_SIZE" VALUE="1"/>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_util_vector_logic_0_0"/>
+        <PARAMETER NAME="LOGO_FILE" VALUE="data/sym_orgate.png"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="0" NAME="Op1" RIGHT="0" SIGIS="undef" SIGNAME="M9_codeur_i2s_mef_cod_i2s_vsb_0_o_load_left">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="M9_codeur_i2s_mef_cod_i2s_vsb_0" PORT="o_load_left"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="0" NAME="Op2" RIGHT="0" SIGIS="undef" SIGNAME="M9_codeur_i2s_mef_cod_i2s_vsb_0_o_load_right">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="M9_codeur_i2s_mef_cod_i2s_vsb_0" PORT="o_load_right"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="0" NAME="Res" RIGHT="0" SIGIS="undef" SIGNAME="M9_codeur_i2s_util_vector_logic_0_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="M9_codeur_i2s_reg_dec_24b_fd_0" PORT="i_load"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="4" FULLNAME="/M9_codeur_i2s/xlconcat_0" HWVERSION="2.1" INSTANCE="M9_codeur_i2s_xlconcat_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xlconcat" VLNV="xilinx.com:ip:xlconcat:2.1">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="IN0_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN1_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN2_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN3_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN4_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN5_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN6_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN7_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN8_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN9_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN10_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN11_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN12_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN13_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN14_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN15_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN16_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN17_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN18_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN19_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN20_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN21_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN22_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN23_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN24_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN25_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN26_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN27_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN28_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN29_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN30_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN31_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN32_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN33_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN34_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN35_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN36_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN37_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN38_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN39_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN40_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN41_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN42_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN43_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN44_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN45_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN46_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN47_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN48_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN49_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN50_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN51_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN52_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN53_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN54_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN55_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN56_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN57_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN58_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN59_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN60_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN61_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN62_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN63_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN64_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN65_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN66_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN67_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN68_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN69_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN70_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN71_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN72_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN73_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN74_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN75_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN76_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN77_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN78_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN79_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN80_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN81_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN82_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN83_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN84_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN85_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN86_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN87_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN88_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN89_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN90_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN91_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN92_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN93_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN94_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN95_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN96_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN97_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN98_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN99_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN100_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN101_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN102_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN103_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN104_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN105_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN106_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN107_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN108_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN109_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN110_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN111_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN112_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN113_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN114_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN115_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN116_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN117_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN118_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN119_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN120_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN121_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN122_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN123_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN124_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN125_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN126_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN127_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="dout_width" VALUE="2"/>
+        <PARAMETER NAME="NUM_PORTS" VALUE="2"/>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_xlconcat_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="0" NAME="In0" RIGHT="0" SIGIS="undef" SIGNAME="M9_codeur_i2s_mef_cod_i2s_vsb_0_o_load_left">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="M9_codeur_i2s_mef_cod_i2s_vsb_0" PORT="o_load_left"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="0" NAME="In1" RIGHT="0" SIGIS="undef" SIGNAME="M9_codeur_i2s_mef_cod_i2s_vsb_0_o_load_right">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="M9_codeur_i2s_mef_cod_i2s_vsb_0" PORT="o_load_right"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="1" NAME="dout" RIGHT="0" SIGIS="undef" SIGNAME="M9_codeur_i2s_xlconcat_0_dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="M9_codeur_i2s_mux2_0" PORT="sel"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="7" FULLNAME="/M9_codeur_i2s/xlconstant_0" HWVERSION="1.1" INSTANCE="M9_codeur_i2s_xlconstant_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xlconstant" VLNV="xilinx.com:ip:xlconstant:1.1">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="CONST_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="CONST_VAL" VALUE="0x1"/>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_xlconstant_0_1"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="O" LEFT="0" NAME="dout" RIGHT="0" SIGIS="undef" SIGNAME="M9_codeur_i2s_xlconstant_0_dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="M9_codeur_i2s_reg_dec_24b_fd_0" PORT="i_dat_bit"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="2" FULLNAME="/M9_codeur_i2s/xlslice_0" HWVERSION="1.0" INSTANCE="M9_codeur_i2s_xlslice_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xlslice" VLNV="xilinx.com:ip:xlslice:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="DIN_WIDTH" VALUE="24"/>
+        <PARAMETER NAME="DIN_FROM" VALUE="23"/>
+        <PARAMETER NAME="DIN_TO" VALUE="23"/>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_xlslice_0_0"/>
+        <PARAMETER NAME="DOUT_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="23" NAME="Din" RIGHT="0" SIGIS="undef" SIGNAME="M9_codeur_i2s_reg_dec_24b_fd_0_o_dat">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="M9_codeur_i2s_reg_dec_24b_fd_0" PORT="o_dat"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="0" NAME="Dout" RIGHT="0" SIGIS="undef" SIGNAME="M9_codeur_i2s_xlslice_0_Dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="o_pbdat"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/Multiplexeur_choix_fonction" HWVERSION="1.0" INSTANCE="Multiplexeur_choix_fonction" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="mux4" VLNV="xilinx.com:module_ref:mux4:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="input_length" VALUE="24"/>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_mux4_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="23" NAME="input0" RIGHT="0" SIGIS="undef" SIGNAME="M1_decodeur_i2s_registre_24bits_droite_o_dat">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="M1_decodeur_i2s_registre_24bits_droite" PORT="o_dat"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="23" NAME="input1" RIGHT="0" SIGIS="undef" SIGNAME="M2_fonction_distortion_dure1_o_ech_fct">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="M2_fonction_distortion_dure1" PORT="o_ech_fct"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="23" NAME="input2" RIGHT="0" SIGIS="undef" SIGNAME="M3_fonction_distorsion_dure2_o_ech_fct">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="M3_fonction_distorsion_dure2" PORT="o_ech_fct"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="23" NAME="input3" RIGHT="0" SIGIS="undef" SIGNAME="M4_fonction3_o_ech_fct">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="M4_fonction3" PORT="o_ech_fct"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="1" NAME="sel" RIGHT="0" SIGIS="undef" SIGNAME="M8_commande_o_selection_fct">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="M8_commande" PORT="o_selection_fct"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="23" NAME="output0" RIGHT="0" SIGIS="undef" SIGNAME="Multiplexeur_choix_fonction_output0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="M9_codeur_i2s_mux2_0" PORT="input2"/>
+            <CONNECTION INSTANCE="M7_parametre_3" PORT="i_ech"/>
+            <CONNECTION INSTANCE="M6_parametre_2" PORT="i_ech"/>
+            <CONNECTION INSTANCE="M5_parametre_1" PORT="i_ech"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/Multiplexeur_choix_parametre" HWVERSION="1.0" INSTANCE="Multiplexeur_choix_parametre" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="mux4" VLNV="xilinx.com:module_ref:mux4:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="input_length" VALUE="8"/>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_mux4_0_1"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="7" NAME="input0" RIGHT="0" SIGIS="undef" SIGNAME="parametre_0_dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="parametre_0" PORT="dout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="7" NAME="input1" RIGHT="0" SIGIS="undef" SIGNAME="M5_parametre_1_o_param">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="M5_parametre_1" PORT="o_param"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="7" NAME="input2" RIGHT="0" SIGIS="undef" SIGNAME="M6_parametre_2_o_param">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="M6_parametre_2" PORT="o_param"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="7" NAME="input3" RIGHT="0" SIGIS="undef" SIGNAME="M7_parametre_3_o_param">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="M7_parametre_3" PORT="o_param"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="1" NAME="sel" RIGHT="0" SIGIS="undef" SIGNAME="M8_commande_o_selection_par">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="M8_commande" PORT="o_selection_par"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="7" NAME="output0" RIGHT="0" SIGIS="undef" SIGNAME="Multiplexeur_choix_parametre_output0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="o_param"/>
+            <CONNECTION INSTANCE="M10_conversion_affichage" PORT="DA"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="7" FULLNAME="/parametre_0" HWVERSION="1.1" INSTANCE="parametre_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xlconstant" VLNV="xilinx.com:ip:xlconstant:1.1">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="CONST_WIDTH" VALUE="8"/>
+        <PARAMETER NAME="CONST_VAL" VALUE="0x00"/>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_xlconstant_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="O" LEFT="7" NAME="dout" RIGHT="0" SIGIS="undef" SIGNAME="parametre_0_dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Multiplexeur_choix_parametre" PORT="input0"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+  </MODULES>
+
+</EDKSYSTEM>
