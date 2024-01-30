@@ -36,8 +36,10 @@ file rightInputFile : text;
 --Chemin depuis le fichier de simulation les fichiers se trouvent à la racine du projet
 --constant leftInputFileName : string := "../../../../leftInput.txt"; 
 --constant rightInputFileName : string := "../../../../rightInput.txt";
-constant leftInputFileName : string := "../../../../rightInput.txt";
-constant rightInputFileName : string := "../../../../leftInput.txt";
+--constant leftInputFileName : string := "../../../../rightInput.txt";
+--constant rightInputFileName : string := "../../../../leftInput.txt";
+constant leftInputFileName : string := "../../../../SignalHexa_1000Hz.txt";
+constant rightInputFileName : string := "../../../../SignalHexa_1000Hz.txt";
 
 shared variable fstatusLeft : file_open_status := NAME_ERROR;
 shared variable fstatusRight : file_open_status := NAME_ERROR;
@@ -142,7 +144,6 @@ end nextRightInput;
     signal d_param      : std_logic_vector(7 downto 0):= (others =>'0');
     signal d_led        : std_logic_vector(3 downto 0):= (others =>'0');
     
-    signal strobe: std_logic := '0';
     
 -- notes
     -- frequences      ***********************
@@ -197,8 +198,7 @@ begin
           i_data       =>  d_sig_pbdat,
           o_dat_left  =>  d_ech_reg_left,
           o_dat_right =>  d_ech_reg_right,
-          --o_str_dat   =>  open
-          o_str_dat   =>  strobe
+          o_str_dat   =>  open
       );
     
   

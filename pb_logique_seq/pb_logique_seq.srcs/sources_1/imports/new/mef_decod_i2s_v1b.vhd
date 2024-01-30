@@ -71,7 +71,7 @@ begin
   -- Réinitialise le compteur à chaque changement de lrc
    rest_cpt: process (i_lrc, d_reclrc_prec, i_reset)
    begin
-      o_cpt_bit_reset <= (d_reclrc_prec xor i_lrc) or i_reset;
+   --   o_cpt_bit_reset <= (d_reclrc_prec xor i_lrc) or i_reset;
    end process;
      
    -- Process de transition d'état

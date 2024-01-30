@@ -50,15 +50,18 @@ architecture Behavioral of calcul_param_1 is
 ---------------------------------------------------------------------------------
 -- Signaux
 ----------------------------------------------------------------------------------
-    type State_Type is (E0, E1, E2, Sortie);
+    type State_Type is (INIT, Attente, Positif, Negatif, Sortie, Reset);
     signal current_state, next_state : State_Type;
-    signal periode : std_logic_vector(7 downto 0);
     
     signal streak : std_logic_vector(1 downto 0);
     
-    signal rst_compteur_3 : std_logic;
-    signal rst_compteur_periode : std_logic;
+    signal rst_compteur_3 : std_logic := '0';
+    signal rst_compteur_periode : std_logic := '0';
 
+    signal static_param : std_logic_vector(7 downto 0) := (others => '0');
+    signal param : std_logic_vector(7 downto 0) := (others => '0');
+    
+    
 
     component compteur_nbits is
         generic (nbits : integer := 8);
@@ -72,28 +75,30 @@ architecture Behavioral of calcul_param_1 is
 ---------------------------------------------------------------------------------------------
 --    Description comportementale
 ---------------------------------------------------------------------------------------------
-begin 
-    compteur_3 : compteur_nbits generic map (nbits => 2)
+begin
+    --o_param <=  static_param;         
+    compteur_periode : compteur_nbits generic map (nbits => 8)
+                        port map (
+                            clk => i_bclk,
+                            i_en => i_en,
+                            reset => rst_compteur_periode,
+                            o_val_cpt => param
+                        );
+                        
+    compteur_streak : compteur_nbits generic map (nbits => 2)
                         port map (
                             clk => i_bclk,
                             i_en => i_en,
                             reset => rst_compteur_3,
                             o_val_cpt => streak
                         );
-    compteur_periode : compteur_nbits generic map (nbits => 8)
-                        port map (
-                            clk => i_bclk,
-                            i_en => i_en,
-                            reset => rst_compteur_periode,
-                            o_val_cpt => periode
-                        );
 
     -- Process de transition d'état
-    process(i_bclk, i_reset)
+    process (i_en, i_reset) is
     begin
-        if i_reset = '1' then
-            current_state <= E0;
-        elsif rising_edge(i_bclk) then
+        if (i_reset = '1') then
+                current_state <= INIT;
+        elsif (i_en'event and i_en = '1') then
             current_state <= next_state;
         end if;
     end process;
@@ -102,50 +107,95 @@ begin
     process(current_state, streak)
     begin
         case (current_state) is
-        when E0 =>
+        when INIT =>
             if (streak = "11") then
-                next_state <= E1;
+                next_state <= Attente;
             else
-                next_state <= E0;
+                next_state <= INIT;
             end if;
-        when E1 =>
+        when Attente =>
             if (streak = "11") then
-                next_state <= E2;
+                next_state <= Positif;
             else
-                next_state <= E1;
+                next_state <= Attente;
             end if;
-        when E2 =>
+        when Positif =>
             if (streak = "11") then
-                next_state <= Sortie;
-               -- temp_periode <= periode
-                --rst_compteur_periode <= '1';
+                next_state <= Negatif;
             else
-                next_state <= E2;
+                next_state <= Positif;
             end if;
+        when Negatif =>
+            if (streak = "11") then
+                next_state <= Attente;
+            else
+                next_state <= Positif;
+            end if;
+        when Sortie =>
+            next_state <= Reset;
+        when Reset =>
+            next_state <= Positif;
         when others =>
-            next_state <= E0;
+            next_state <= INIT;
         end case;
     end process;
     
-    -- Reset le compteur_3
-    process(i_bclk, i_reset, current_state)
+    -- Reset les compteur
+    process(i_en, i_reset, current_state)
     begin
         case (current_state) is
-        when E0 | E2 =>
-            if (i_ech(23) = '1') then
+            when INIT =>
+                rst_compteur_periode <= '1';
+                if (i_ech(23) = '1') then
+                    rst_compteur_3 <= '1';
+                else
+                    rst_compteur_3 <= '0';
+                end if;
+            when Attente =>
+                rst_compteur_periode <= '1';
+                if (i_ech(23) = '0') then
+                    rst_compteur_3 <= '1';
+                else
+                    rst_compteur_3 <= '0';
+                end if;
+            when Positif =>
+                rst_compteur_periode <= '0';
+                if (i_ech(23) = '1') then
+                    rst_compteur_3 <= '1';
+                else
+                    rst_compteur_3 <= '0';
+                end if;
+            when Negatif =>
+                rst_compteur_periode <= '0';
+                if (i_ech(23) = '0') then
+                    rst_compteur_3 <= '1';
+                else
+                    rst_compteur_3 <= '0';
+                end if;
+            when Sortie =>
+                rst_compteur_periode <= '0';
                 rst_compteur_3 <= '1';
-            else
-                rst_compteur_3 <= '0';
-            end if;
-        when E1 =>
-            if (i_ech(23) = '1') then
-                rst_compteur_3 <= '0';
-            else
+            when Reset =>
+                rst_compteur_periode <= '1';
                 rst_compteur_3 <= '1';
-            end if;
-        when others =>
-            rst_compteur_3 <= '1';
+            when others =>
+                rst_compteur_periode <= '1';
+                if (i_ech(23) = '0') then
+                    rst_compteur_3 <= '1';
+                else
+                    rst_compteur_3 <= '0';
+                end if;
         end case;
-    end process;
+     end process;
+    
+process(current_state)
+begin
+    case current_state is
+        when Sortie =>
+            o_param <= param;
+        when others =>
+            null;
+    end case;
+end process;
     
 end Behavioral;

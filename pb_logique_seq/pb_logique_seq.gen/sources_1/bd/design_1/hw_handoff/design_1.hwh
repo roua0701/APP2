@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Mon Jan 29 14:40:17 2024" VIVADOVERSION="2020.2">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Tue Jan 30 15:25:27 2024" VIVADOVERSION="2020.2">
 
   <SYSTEMINFO ARCH="zynq" BOARD="digilentinc.com:zybo-z7-10:part0:1.0" DEVICE="7z010" NAME="design_1" PACKAGE="clg400" SPEEDGRADE="-1"/>
 
@@ -27,10 +27,10 @@
     </PORT>
     <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk_100MHz" SIGIS="clk" SIGNAME="External_Ports_clk_100MHz">
       <CONNECTIONS>
-        <CONNECTION INSTANCE="M1_decodeur_i2s_compteur_7bits" PORT="clk"/>
         <CONNECTION INSTANCE="M1_decodeur_i2s_registre_24bits_droite" PORT="i_clk"/>
         <CONNECTION INSTANCE="M1_decodeur_i2s_registre_24bits_gauche" PORT="i_clk"/>
         <CONNECTION INSTANCE="M1_decodeur_i2s_registre_decalage_24bits" PORT="i_clk"/>
+        <CONNECTION INSTANCE="M1_decodeur_i2s_compteur_7bits" PORT="clk"/>
         <CONNECTION INSTANCE="M1_decodeur_i2s_MEF_decodeur_i2s" PORT="i_bclk"/>
         <CONNECTION INSTANCE="M9_codeur_i2s_compteur_nbits_0" PORT="clk"/>
         <CONNECTION INSTANCE="M9_codeur_i2s_mef_cod_i2s_vsb_0" PORT="i_bclk"/>
@@ -137,8 +137,8 @@
         </PORT>
         <PORT DIR="O" NAME="o_bit_enable" SIGIS="undef" SIGNAME="M1_decodeur_i2s_MEF_decodeur_i2s_o_bit_enable">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="M1_decodeur_i2s_compteur_7bits" PORT="i_en"/>
             <CONNECTION INSTANCE="M1_decodeur_i2s_registre_decalage_24bits" PORT="i_en"/>
+            <CONNECTION INSTANCE="M1_decodeur_i2s_compteur_7bits" PORT="i_en"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" NAME="o_load_left" SIGIS="undef" SIGNAME="M1_decodeur_i2s_MEF_decodeur_i2s_o_load_left">

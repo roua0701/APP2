@@ -1,0 +1,366 @@
+/*
+
+Xilinx Vivado v2020.2 (64-bit) [Major: 2020, Minor: 2]
+SW Build: 3064766 on Wed Nov 18 09:12:45 MST 2020
+IP Build: 3064653 on Wed Nov 18 14:17:31 MST 2020
+
+Process ID (PID): 12308
+License: Customer
+Mode: GUI Mode
+
+Current time: 	Mon Jan 29 17:45:36 EST 2024
+Time zone: 	Eastern Standard Time (America/New_York)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 16
+
+Screen size: 2560x1440
+Screen resolution (DPI): 150
+Available screens: 1
+Default font: family=Segoe UI,name=Segoe UI,style=plain,size=18
+Scale size: 27
+
+Java version: 	11.0.2 64-bit
+Java home: 	C:/Xilinx/Vivado/2020.2/tps/win64/jre11.0.2
+Java executable location: 	C:/Xilinx/Vivado/2020.2/tps/win64/jre11.0.2/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	arous
+User home directory: C:/Users/arous
+User working directory: C:/Users/arous/Bureau/APP2/pb_logique_seq
+User country: 	CA
+User language: 	en
+User locale: 	en_CA
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2020.2
+RDI_DATADIR: C:/Xilinx/Vivado/2020.2/data
+RDI_BINDIR: C:/Xilinx/Vivado/2020.2/bin
+
+Vivado preferences file location: C:/Users/arous/AppData/Roaming/Xilinx/Vivado/2020.2/vivado.xml
+Vivado preferences directory: C:/Users/arous/AppData/Roaming/Xilinx/Vivado/2020.2/
+Vivado layouts directory: C:/Users/arous/AppData/Roaming/Xilinx/Vivado/2020.2/data/layouts
+PlanAhead jar file location: 	C:/Xilinx/Vivado/2020.2/lib/classes/planAhead.jar
+Vivado log file location: 	C:/Users/arous/Bureau/APP2/pb_logique_seq/vivado.log
+Vivado journal file location: 	C:/Users/arous/Bureau/APP2/pb_logique_seq/vivado.jou
+Engine tmp dir: 	C:/Users/arous/Bureau/APP2/pb_logique_seq/.Xil/Vivado-12308-LAPTOP-VHGVRR86
+
+Xilinx Environment Variables
+----------------------------
+XILINX: C:/Xilinx/Vivado/2020.2/ids_lite/ISE
+XILINX_DSP: C:/Xilinx/Vivado/2020.2/ids_lite/ISE
+XILINX_HLS: C:/Xilinx/Vitis_HLS/2020.2
+XILINX_PLANAHEAD: C:/Xilinx/Vivado/2020.2
+XILINX_SDK: C:/Xilinx/Vitis/2020.2
+XILINX_VITIS: C:/Xilinx/Vitis/2020.2
+XILINX_VIVADO: C:/Xilinx/Vivado/2020.2
+XILINX_VIVADO_HLS: C:/Xilinx/Vivado/2020.2
+
+
+GUI allocated memory:	128 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 1,080 MB
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// [GUI Memory]: 103 MB (+105654kb) [00:00:07]
+// [Engine Memory]: 1,080 MB (+981477kb) [00:00:07]
+// bz (cr):  Open Project : addNotify
+// Opening Vivado Project: C:\Users\arous\Bureau\APP2\pb_logique_seq\pb_logique_seq.xpr. Version: Vivado v2020.2 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project C:/Users/arous/Bureau/APP2/pb_logique_seq/pb_logique_seq.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,080 MB. GUI used memory: 66 MB. Current time: 1/29/24, 5:45:37 PM EST
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 117 MB (+9131kb) [00:00:16]
+// [GUI Memory]: 124 MB (+656kb) [00:00:16]
+// WARNING: HEventQueue.dispatchEvent() is taking  3107 ms.
+// Tcl Message: open_project C:/Users/arous/Bureau/APP2/pb_logique_seq/pb_logique_seq.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'. 
+// Tcl Message: open_project: Time (s): cpu = 00:00:02 ; elapsed = 00:00:10 . Memory (MB): peak = 1095.988 ; gain = 0.000 
+// Project name: pb_logique_seq; location: C:/Users/arous/Bureau/APP2/pb_logique_seq; part: xc7z010clg400-1
+dismissDialog("Open Project"); // bz
+// Tcl Command: 'rdi::info_commands {device::*}'
+// Tcl Command: 'rdi::info_commands {debug::*}'
+// Tcl Command: 'rdi::info_commands {*}'
+// [GUI Memory]: 131 MB (+1413kb) [00:00:19]
+// [GUI Memory]: 141 MB (+3068kb) [00:00:38]
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// [GUI Memory]: 153 MB (+5442kb) [00:01:16]
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 406 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, IP Integrator, Open Block Design]", 7, false); // u
+// Run Command: PAResourceCommand.PACommandNames_OPEN_BLOCK_DESIGN
+// bz (cr):  Open Block Design : addNotify
+// TclEventType: LOAD_FEATURE
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: open_bd_design {C:/Users/arous/Bureau/APP2/pb_logique_seq/pb_logique_seq.srcs/sources_1/bd/design_1/design_1.bd} 
+// Tcl Message: Reading block design file <C:/Users/arous/Bureau/APP2/pb_logique_seq/pb_logique_seq.srcs/sources_1/bd/design_1/design_1.bd>... 
+// TclEventType: RSB_CHANGE_CURRENT_DIAGRAM
+// TclEventType: LOAD_FEATURE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_OPEN_DIAGRAM
+// Tcl Message: Adding component instance block -- xilinx.com:module_ref:compteur_nbits:1.0 - compteur_7bits 
+// Tcl Message: Adding component instance block -- xilinx.com:module_ref:reg_24b:1.0 - registre_24bits_droite Adding component instance block -- xilinx.com:module_ref:reg_24b:1.0 - registre_24bits_gauche Adding component instance block -- xilinx.com:module_ref:reg_dec_24b:1.0 - registre_decalage_24bits Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - xlconstant_0 Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - xlconstant_1 Adding component instance block -- xilinx.com:module_ref:mef_decod_i2s_v1b:1.0 - MEF_decodeur_i2s Adding component instance block -- xilinx.com:module_ref:compteur_nbits:1.0 - compteur_nbits_0 
+// TclEventType: RSB_OPEN_DIAGRAM
+// WARNING: HEventQueue.dispatchEvent() is taking  1340 ms.
+// Elapsed time: 10 seconds
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+// Tcl Message: open_bd_design: Time (s): cpu = 00:00:04 ; elapsed = 00:00:10 . Memory (MB): peak = 1118.543 ; gain = 22.555 
+// 'bF' command handler elapsed time: 10 seconds
+// a (cr): Critical Messages: addNotify
+dismissDialog("Open Block Design"); // bz
+// HMemoryUtils.trashcanNow. Engine heap size: 1,135 MB. GUI used memory: 91 MB. Current time: 1/29/24, 5:52:42 PM EST
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f
+dismissDialog("Critical Messages"); // a
+// [Engine Memory]: 1,135 MB (+51kb) [00:07:19]
+// Elapsed time: 18 seconds
+selectButton(PAResourceOtoP.PlanAheadTab_REFRESH_CHANGED_MODULES, "Refresh Changed Modules"); // h
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: RSB_BITABEN_IPREPODATA_REFRESH
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: RSB_OPEN_DIAGRAM
+// TclEventType: RSB_SCRIPT_TASK
+// bz (cr):  Refresh Changed Modules : addNotify
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: FILESET_UPDATE_IP
+// TclEventType: IP_UPGRADE_COMPLETE
+// Tcl Message: update_module_reference design_1_calcul_param_1_0_0 
+// Tcl Message: INFO: [IP_Flow 19-5107] Inferred bus interface 'i_reset' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository). INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// Tcl Message: Upgrading 'C:/Users/arous/Bureau/APP2/pb_logique_seq/pb_logique_seq.srcs/sources_1/bd/design_1/design_1.bd' 
+// Tcl Message: INFO: [IP_Flow 19-1972] Upgraded design_1_calcul_param_1_0_0 from calcul_param_1_v1_0 1.0 to calcul_param_1_v1_0 1.0 
+// Tcl Message: Wrote  : <C:\Users\arous\Bureau\APP2\pb_logique_seq\pb_logique_seq.srcs\sources_1\bd\design_1\design_1.bd>  Wrote  : <C:/Users/arous/Bureau/APP2/pb_logique_seq/pb_logique_seq.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui>  Wrote  : <C:/Users/arous/Bureau/APP2/pb_logique_seq/pb_logique_seq.srcs/sources_1/bd/design_1/ui/bd_a93fd001.ui>  
+dismissDialog("Refresh Changed Modules"); // bz
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // ac
+selectMenuItem(RDIResourceCommand.RDICommands_RUN_SCRIPT, "Run Tcl Script..."); // ak
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // ac
+// Run Command: RDIResourceCommand.RDICommands_RUN_SCRIPT
+setFileChooser("C:/Users/arous/Bureau/APP2/pb_logique_seq/schema.tcl");
+// Source Tcl File: 'C:/Users/arous/Bureau/APP2/pb_logique_seq/schema.tcl'
+// Tcl Command: 'source C:/Users/arous/Bureau/APP2/pb_logique_seq/schema.tcl'
+// bz (cr):  Source Tcl Script : addNotify
+// TclEventType: HIGHLIGHT_ADD
+// TclEventType: RSB_CANVAS_LOCATION
+// TclEventType: RSB_PROPERTY_CHANGE
+// Tcl Message: source C:/Users/arous/Bureau/APP2/pb_logique_seq/schema.tcl 
+dismissDialog("Source Tcl Script"); // bz
+// Elapsed time: 55 seconds
+selectTab((HResource) null, (HResource) null, "Sources", 0); // aK
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, calcul_param_1(Behavioral) (calcul_param_1.vhd)]", 2, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, calcul_param_1(Behavioral) (calcul_param_1.vhd)]", 2, true, false, false, false, false, true); // D - Double Click - Node
+// Elapsed time: 66 seconds
+selectCodeEditor("calcul_param_1.vhd", 512, 287); // bP
+selectCodeEditor("calcul_param_1.vhd", 568, 320); // bP
+// HMemoryUtils.trashcanNow. Engine heap size: 1,147 MB. GUI used memory: 94 MB. Current time: 1/29/24, 6:22:45 PM EST
+// WARNING: HEventQueue.dispatchEvent() is taking  1082507 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 1082157 ms. Increasing delay to 3246471 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2165 ms.
+// Elapsed time: 3165 seconds
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // Q
+// Elapsed time: 132 seconds
+selectCodeEditor("calcul_param_1.vhd", 141, 567); // bP
+selectCodeEditor("calcul_param_1.vhd", 141, 567, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("calcul_param_1.vhd", 141, 567); // bP
+selectCodeEditor("calcul_param_1.vhd", 162, 569); // bP
+// Elapsed time: 25 seconds
+selectCodeEditor("calcul_param_1.vhd", 318, 660); // bP
+selectCodeEditor("calcul_param_1.vhd", 318, 660, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("calcul_param_1.vhd", 318, 660); // bP
+// Elapsed time: 39 seconds
+selectCodeEditor("calcul_param_1.vhd", 132, 664); // bP
+selectCodeEditor("calcul_param_1.vhd", 132, 664, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("calcul_param_1.vhd", 132, 664); // bP
+selectCodeEditor("calcul_param_1.vhd", 185, 764); // bP
+// Elapsed time: 72 seconds
+selectCodeEditor("calcul_param_1.vhd", 76, 356); // bP
+selectCodeEditor("calcul_param_1.vhd", 76, 356, false, false, false, false, true); // bP - Double Click
+// HMemoryUtils.trashcanNow. Engine heap size: 1,147 MB. GUI used memory: 85 MB. Current time: 1/29/24, 6:52:49 PM EST
+typeControlKey((HResource) null, "calcul_param_1.vhd", 'c'); // bP
+// Elapsed time: 13 seconds
+selectCodeEditor("calcul_param_1.vhd", 48, 338); // bP
+selectCodeEditor("calcul_param_1.vhd", 269, 401); // bP
+selectCodeEditor("calcul_param_1.vhd", 277, 267); // bP
+selectCodeEditor("calcul_param_1.vhd", 229, 393); // bP
+typeControlKey((HResource) null, "calcul_param_1.vhd", 'v'); // bP
+// Elapsed time: 36 seconds
+selectCodeEditor("calcul_param_1.vhd", 450, 630); // bP
+selectCodeEditor("calcul_param_1.vhd", 450, 630, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("calcul_param_1.vhd", 235, 640); // bP
+selectCodeEditor("calcul_param_1.vhd", 235, 640, false, false, false, false, true); // bP - Double Click
+typeControlKey((HResource) null, "calcul_param_1.vhd", 'c'); // bP
+selectCodeEditor("calcul_param_1.vhd", 193, 531); // bP
+typeControlKey((HResource) null, "calcul_param_1.vhd", 'v'); // bP
+// Elapsed time: 10 seconds
+selectCodeEditor("calcul_param_1.vhd", 103, 141); // bP
+selectCodeEditor("calcul_param_1.vhd", 103, 141, false, false, false, false, true); // bP - Double Click
+typeControlKey((HResource) null, "calcul_param_1.vhd", 'c'); // bP
+selectCodeEditor("calcul_param_1.vhd", 42, 710); // bP
+typeControlKey((HResource) null, "calcul_param_1.vhd", 'v'); // bP
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 45 seconds
+selectCodeEditor("calcul_param_1.vhd", 436, 489); // bP
+selectCodeEditor("calcul_param_1.vhd", 436, 489, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("calcul_param_1.vhd", 436, 489); // bP
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: DG_GRAPH_STALE
+// Elapsed time: 24 seconds
+selectCodeEditor("calcul_param_1.vhd", 288, 347); // bP
+selectCodeEditor("calcul_param_1.vhd", 441, 347); // bP
+selectCodeEditor("calcul_param_1.vhd", 439, 294); // bP
+selectCodeEditor("calcul_param_1.vhd", 417, 582); // bP
+selectCodeEditor("calcul_param_1.vhd", 443, 631); // bP
+selectCodeEditor("calcul_param_1.vhd", 237, 92); // bP
+selectCodeEditor("calcul_param_1.vhd", 237, 93, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("calcul_param_1.vhd", 394, 194); // bP
+selectCodeEditor("calcul_param_1.vhd", 414, 82); // bP
+selectCodeEditor("calcul_param_1.vhd", 414, 82, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("calcul_param_1.vhd", 282, 618); // bP
+selectCodeEditor("calcul_param_1.vhd", 282, 618, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("calcul_param_1.vhd", 182, 138); // bP
+selectCodeEditor("calcul_param_1.vhd", 182, 138, false, true, false, false, true); // bP - Control Key - Double Click
+typeControlKey((HResource) null, "calcul_param_1.vhd", 'c'); // bP
+selectCodeEditor("calcul_param_1.vhd", 153, 618); // bP
+selectCodeEditor("calcul_param_1.vhd", 153, 618, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("calcul_param_1.vhd", 153, 618); // bP
+// Elapsed time: 14 seconds
+typeControlKey((HResource) null, "calcul_param_1.vhd", 'v'); // bP
+// Elapsed time: 20 seconds
+selectCodeEditor("calcul_param_1.vhd", 472, 184); // bP
+selectCodeEditor("calcul_param_1.vhd", 472, 184, false, false, false, false, true); // bP - Double Click
+typeControlKey((HResource) null, "calcul_param_1.vhd", 'c'); // bP
+// Elapsed time: 10 seconds
+selectCodeEditor("calcul_param_1.vhd", 397, 703); // bP
+typeControlKey((HResource) null, "calcul_param_1.vhd", 'v'); // bP
+// Elapsed time: 80 seconds
+selectCodeEditor("calcul_param_1.vhd", 318, 465); // bP
+selectCodeEditor("calcul_param_1.vhd", 318, 465, false, false, false, false, true); // bP - Double Click
+// TclEventType: FILE_SET_CHANGE
+// Run Command: PAResourceCommand.PACommandNames_SAVE_RSB_DESIGN
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// Tcl Message: save_bd_design 
+// Tcl Message: Wrote  : <C:\Users\arous\Bureau\APP2\pb_logique_seq\pb_logique_seq.srcs\sources_1\bd\design_1\design_1.bd>  Wrote  : <C:/Users/arous/Bureau/APP2/pb_logique_seq/pb_logique_seq.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui>  Wrote  : <C:/Users/arous/Bureau/APP2/pb_logique_seq/pb_logique_seq.srcs/sources_1/bd/design_1/ui/bd_a93fd001.ui>  
+// TclEventType: DG_GRAPH_STALE
+// WARNING: HEventQueue.dispatchEvent() is taking  1248 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2270 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1470898 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,147 MB. GUI used memory: 86 MB. Current time: 1/29/24, 7:25:57 PM EST
+// WARNING: HEventQueue.dispatchEvent() is taking  1691087 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1160 ms.
